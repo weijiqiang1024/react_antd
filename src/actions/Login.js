@@ -20,6 +20,7 @@ export function loginSuccess(userInfo) {
 }
 
 export function loginFail(msg) {
+    debugger;
     return {
         type: LOGIN_FAIL,
         msg:msg

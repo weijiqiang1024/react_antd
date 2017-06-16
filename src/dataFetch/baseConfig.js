@@ -35,11 +35,11 @@ export const config={
     params: {
         ID: 12345
     },
-    mode : 'cors' ,
+    //mode : 'cors' ,
     //设置超时时间
     timeout: 5000,
     //返回数据类型
     responseType: 'json', // default
-    withCredentials:true
+   // withCredentials:true
 
 };

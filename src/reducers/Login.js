@@ -17,7 +17,9 @@ export default function Login(state = initState, action) {
 
     switch (action.type) {
         case LOGIN_SUBMIT:
+            console.log(action);
             return  {
+                
                 ...state,
                 name: action.name,
                 pwd:action.pwd,

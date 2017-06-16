@@ -5,7 +5,7 @@ import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {loginSubmit} from '../actions/Login';
-import Login from '../components/Login';
+import Login from '../pages/Login';
 
 // Map Redux state to component props
 function mapStateToProps(state) {
