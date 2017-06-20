@@ -3,8 +3,6 @@
  */
 import {combineReducers} from 'redux';
 import Login from './Login';
-import Bayonet from './Bayonet'
 export default combineReducers({
-    Login,
-    Bayonet
+    Login
 })

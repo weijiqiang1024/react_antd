@@ -4,9 +4,7 @@
 import {createStore, applyMiddleware, compose} from 'redux';
 import createLogger from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
-// import rootSaga from './sagas/Login';
- import rootSaga from './sagas/Bayonet';
-
+import rootSaga from './sagas/Login';
 import FullReducers from './reducers/FullReducers';
 const loggerMiddleware = createLogger();
 //创建saga middleware

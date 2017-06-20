@@ -6,7 +6,7 @@ import styles from '../css/login.css';
 import { Form, Icon, Input, Button, Checkbox,Tooltip  } from 'antd';
 const FormItem = Form.Item;
 
-class NormalLoginForm extends React.Component {
+export default class  extends React.Component {
     componentWillReceiveProps(nextProps) {
         if (nextProps.isSuccess) {
             debugger;
@@ -20,6 +20,7 @@ class NormalLoginForm extends React.Component {
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values);
+                console.log(this.props);
                 this.props.onIncreaseClick(values.userName,values.password);
             }
         });
@@ -76,36 +77,7 @@ class NormalLoginForm extends React.Component {
 //         },
 //     };
 // }})(NormalLoginForm);
-const LoginForm = Form.create()(NormalLoginForm);
 
-class Login extends React.Component {
-    render(){
-        return (
-            <div className={styles.login}>
-                <div className={styles.header}>
-                    <div className={styles.headerTitle}>
-                        周口预警防控平台
-                    </div>
-                </div>
-                <div>
 
-                </div>
-                <div className={styles.footer}>
-                    <div className={styles.footerTitle}>
-                        <div className={styles.footerFont}>
-                            支持谷歌浏览器 版权所有 @安徽蓝盾光电子股份有限公司
-                        </div>
-                    </div>
-                </div>
-                <LoginForm {...this.props} />
-            </div>
-        )
-    }
-}
 
-// Login.propTypes = {
-//     onIncreaseClick: PropTypes.func.isRequired
-// };
-
-export default Login;
 
